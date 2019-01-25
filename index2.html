@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="jquery-3.3.1.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('#btn').click(function () {
+                $('p').append(' <b>This is appended text');
+                $('ol').append('<li>This is appended item</li>');
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <p>This text will be appended</p>
+
+    <ol>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+    </ol>
+
+    <button id="btn">Append</button>
+</body>
+
+</html>
